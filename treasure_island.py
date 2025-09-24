@@ -12,7 +12,7 @@ else:
     else:
         print("A boat arrives and takes you safely to the island.")
         choice3 = input("You arrive at the island unharmed. There is a house with 3 doors: one red, "
-                        "one yellow, and one blue. Which color do you choose?.\n").lower()
+                        "one yellow, and one blue. Which colour do you choose?\n").lower()
         if choice3 == "red":
             print("It's a room full of fire. Game Over.")
         elif choice3 == "blue":
