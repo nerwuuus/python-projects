@@ -1,2 +1,3 @@
-# python-projects
-The python-projects branch contains code and exercises from the "Python Bootcamp: 100 Days of Code" course. It features daily coding challenges and projects designed to build practical Python skills. This branch serves as a comprehensive learning journey, documenting progress and solutions throughout the bootcamp.
+# 📁 python-projects
+This repository documents a hands-on learning journey through the *100 Days of Code: The Complete Python Pro Bootcamp course*, featuring daily coding challenges and practical exercises designed to build real-world Python skills. The python-projects branch contains solutions and progress from the bootcamp, serving as a comprehensive reference for learners. <br>
+Additionally, the repository includes beginner-friendly Python projects, like a band name generator, a tip calculator, a treasure island game, rock-paper-scissors, and a password generator. Each project is organised in its own branch with numbered prefixes (e.g., 1-band-name-generator, 2-tip-calculator) to indicate its order and help users navigate them sequentially from basic to more advanced concepts.
