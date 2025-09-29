@@ -11,6 +11,7 @@ python-projects/
 ├── 3-treasure-island-game             # Project: Treasure Island Game
 ├── 4-rock-paper-scissors-game         # Project: Rock-Paper-Scissors Game
 ├── 5-password-generator               # Project: Password Generator
+├── 6-hangman                          # Project: Hangman
 
 
 ```
