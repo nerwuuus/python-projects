@@ -23,8 +23,6 @@ frames = [] # initialize an empty list to collect intermediate results from the 
 # ------------------------------------------------------------------------------------
 
 # multiple seasons
-frames = []
-
 # loop through leagues, seasons, read multiple .csv, append into a list
 for league in leagues:
     for season in range(15, 21):
