@@ -5,11 +5,13 @@ This repository includes beginner-friendly Python projects, like a band name gen
 python-projects/
 │
 ├── main                               # Default branch
-├── 1-band-name-generator              # Project: Band Name Generator
-├── 2-tip-calculator                   # Project: Tip Calculator
-├── 3-treasure-island-game             # Project: Treasure Island Game
-├── 4-rock-paper-scissors-game         # Project: Rock-Paper-Scissors Game
-├── 5-password-generator               # Project: Password Generator
+├── 1-band-name-generator              
+├── 2-tip-calculator                   
+├── 3-treasure-island-game             
+├── 4-rock-paper-scissors-game         
+├── 5-password-generator               
+├── 6-hangman                          
+├── 7-beginner-web-scraping-project-using-pandas               
 
 
 ```
