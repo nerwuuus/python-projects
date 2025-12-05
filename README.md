@@ -1,5 +1,5 @@
 ## 🧰 python-projects
-This repository includes Python projects. Each project is organised in its own branch with numbered prefixes (e.g., 1-band-name-generator, 2-tip-calculator) to indicate its order and help users navigate them sequentially from basic to more advanced concepts.
+This repository contains a collection of beginner to intermediate Python projects designed to build programming skills through practical examples. It includes simple games like Treasure Island, Hangman, and Rock-Paper-Scissors, as well as utility scripts such as a Tip Calculator and Password Generator. For data enthusiasts, there are projects focused on web scraping, data visualization, data cleaning, and text classification using scikit-learn. Each folder represents a standalone project with its own code and logic, making it easy to explore and learn step by step. 
 
 ### 📁 python-projects repository structure
 ```
