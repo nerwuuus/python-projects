@@ -6,29 +6,23 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 print("Welcome to the PyPassword Generator!")
 nr_letters = int(input("How many letters would you like in your password?\n"))
-nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
+nr_symbols = int(input(f"How many symbols would you like?\n"))
 
-password = ""
+password = ''
 
-for char in range(0, nr_letters):
-    # randomly select one letter to add to the password
-    random_char = random.choice(letters)
-    # add randomly selected letters to the password var
-    password += random_char
+for letter in range(0, nr_letters):
+    password += random.choice(letters)
 
-for char in range(0, nr_symbols):
-    random_char = random.choice(symbols)
-    password += random_char
+for symbol in range(0, nr_symbols):
+    password += random.choice(symbols)
 
-for char in range(0, nr_numbers):
-    random_char = random.choice(numbers)
-    password += random_char
+for number in range(0, nr_numbers):
+    password += random.choice(numbers)
 
-# convert password variable to list
-password_list = list(password)
-#shuffle list
-random.shuffle(password_list)
-# join back into a string
-shuffled_password = ''.join(password_list) # ''.join(...) means: join all elements with no separator
-print(shuffled_password)
+# randomise the generated password
+# Python interprets password as string and won't allow to shuffle it. Convert it to a list
+password = list(password)
+random.shuffle(password)
+result = ''.join(password)
+print(result)
