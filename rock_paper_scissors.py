@@ -33,8 +33,9 @@ list_of_choices = [rock, paper, scissors]
 # user choice
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 
-# display an image
-if user_choice >= 0 and user_choice <= 2:
+# validate user input before it can be used as an index into list_of_choices
+if user_choice >= 0 and user_choice <= 2: 
+    # display an image if index is between 0 and 2
     print(f'You chose:')
     print(list_of_choices[user_choice])
     # computer choice
