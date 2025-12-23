@@ -28,27 +28,31 @@ scissors = '''
 '''
 
 # list of choices
-images = [rock, paper, scissors]
+list_of_choices = [rock, paper, scissors]
 
-# get user input
-user_input = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+# user choice
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 
-# get the image
-if user_input >= 0 and user_input <= 2:
-    print(images[user_input])
+# display an image
+if user_choice >= 0 and user_choice <= 2:
+    print(f'You chose:')
+    print(list_of_choices[user_choice])
+    # computer choice
     computer_choice = random.randint(0, 2)
-    print("Computer chose:")
-    print(images[computer_choice])
+    print(f'Computer chose:')
+    print(list_of_choices[computer_choice])
+else:
+    print('Type 0 for Rock, 1 for Paper or 2 for Scissors.')
 
-if user_input >= 3 or user_input < 0:
+if user_choice >= 3 or user_choice < 0:
     print("You typed an invalid number. You lose!")
-elif user_input == 0 and computer_choice == 2:
+elif user_choice == 0 and computer_choice == 2:
     print("You win!")
-elif computer_choice == 0 and user_input == 2:
+elif computer_choice == 0 and user_choice == 2:
     print("You win!")
-elif computer_choice > user_input:
+elif computer_choice > user_choice:
     print("You lose!")
-elif user_input > computer_choice:
+elif user_choice > computer_choice:
     print("You win!")
-elif user_input == computer_choice:
+elif user_choice == computer_choice:
     print("Draw.")
