@@ -15,5 +15,4 @@ def encode(plain_text, shift_amount):
       
     print(f'Here is your encoded message: {result}')
 
-encode(plain_text='hello', shift_amount=1)
-# returns 'ifmmp'
+encode(plain_text='hello', shift_amount=1) # returns 'ifmmp'
