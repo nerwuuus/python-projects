@@ -13,7 +13,7 @@ def encode(plain_text, shift_amount):
         shifted_letter = alphabet[shifted_index]
         result += shifted_letter
       
-    print(f'Here is your encoded message: {result})
+    print(f'Here is your encoded message: {result}')
 
 encode(plain_text='hello', shift_amount=1)
 # returns 'ifmmp'
