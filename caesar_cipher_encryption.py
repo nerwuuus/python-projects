@@ -14,7 +14,7 @@ def encode(plain_text, shift_amount):
     result = ''
   
     for letter in plain_text:
-        shifted_index = ((alphabet.index(letter) + shift_amount) % 26) # 26 letters in the alphabet
+        shifted_index = ((alphabet.index(letter) + shift_amount) % 26) # 26 letters in the alphabet, keeps the range 0 - 25 and prevents from the out of range error
         shifted_letter = alphabet[shifted_index]
         result += shifted_letter
       
