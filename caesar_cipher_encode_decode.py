@@ -13,11 +13,11 @@ def caesar(original_text=text, shift_amount=shift, shift_direction=direction):
             cipher_text += alphabet[shifted_position]
         print(f"Here is the encoded result: {cipher_text}")
     else:
-        cipher_text = ""
+        decrypt_text = ""
         for letter in original_text:
             shifted_position_decrypt = alphabet.index(letter) - shift_amount
             shifted_position_decrypt %= len(alphabet)
-            cipher_text += alphabet[shifted_position]
-        print(f"Here is the decoded result: {cipher_text}")
+            decrypt_text += alphabet[shifted_position_decrypt]
+        print(f"Here is the decoded result: {decrypt_text}")
 
 caesar(original_text=text, shift_amount=shift, shift_direction=direction)
