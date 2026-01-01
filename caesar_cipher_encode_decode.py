@@ -21,3 +21,16 @@ def caesar(original_text=text, shift_amount=shift, shift_direction=direction):
         print(f"Here is the decoded result: {decrypt_text}")
 
 caesar(original_text=text, shift_amount=shift, shift_direction=direction)
+
+# proposed solution
+# def caesar(original_text, shift_amount, encode_or_decode):
+#     output_text = ''
+#     for letter in original_text:
+#         
+#         if encode_or_decode == 'decode':
+#             shift_amount *= -1
+# 
+#         shifted_position = alphabet.index(letter) + shift_amount
+#         shifted_position %= len(alphabet)
+#         output_text += alphabet[shifted_position]
+#     print(f"Here is the decoded result: {decrypt_text}")
