@@ -18,5 +18,6 @@ python-projects/
 ├── 8-beginner-data-visualisation-with-pandas
 ├── 9-data-cleaning-with-pandas
 ├── 10-text_classification_with_sklearn
+├── 11-caesar-cipher
 
 ```
