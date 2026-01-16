@@ -1,3 +1,23 @@
+# ============================================================
+# Number Guessing Game
+# ------------------------------------------------------------
+# This is my project — the game lets a player guess a random
+# number between 1 and 100. It has two difficulty levels:
+# "easy" (10 attempts) and "hard" (5 attempts). 
+# What works:
+# - Player can choose difficulty.
+# - Game tracks attempts and tells if guess is too high or too low.
+# - Game ends when player guesses correctly or runs out of attempts.
+#
+# What was tricky/needed hints:
+# - The while-loop structure for multiple guesses.
+# - Handling the number of attempts correctly.
+# - When to print "out of attempts".
+# 
+# Note: I implemented all the logic myself, only got minor
+# hints on loop structure and attempt handling. This is my code.
+# ============================================================
+
 import random
 
 print("Welcome to the Number Guessing Game!")
