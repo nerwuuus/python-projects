@@ -8,10 +8,10 @@ number = random.randint(1, 100)
 
 def easy():
     attempts_easy = 10
-    print(f"You have {attempts_easy} attempts remaining to guess the number.")
-    guess = int(input('Make a guess: '))
 
     while attempts_easy != 0:
+        print(f"You have {attempts_easy} attempts remaining to guess the number.")
+        guess = int(input('Make a guess: '))
         if guess == number:
             print(f"You got it! The answer was {number}.")
             break
@@ -21,17 +21,15 @@ def easy():
                 print('Too high!')
             else:
                 print('Too low!')
-            print(f"You have {attempts_easy} attempts remaining to guess the number.")
-            guess = int(input('Guess again: '))
     if guess != number:
         print(f"You've run out of attempts. The number was {number}.")
 
 def hard():
     attempts_hard = 5
-    print(f"You have {attempts_hard} attempts remaining to guess the number.")
-    guess = int(input('Make a guess: '))
 
     while attempts_hard != 0:
+        print(f"You have {attempts_hard} attempts remaining to guess the number.")
+        guess = int(input('Make a guess: '))
         if guess == number:
             print(f"You got it! The answer was {number}.")
             break
@@ -41,8 +39,6 @@ def hard():
                 print('Too high!')
             else:
                 print('Too low!')
-            print(f"You have {attempts_hard} attempts remaining to guess the number.")
-            guess = int(input('Guess again: '))
     if guess != number:
         print(f"You've run out of attempts. The number was {number}.")
 
