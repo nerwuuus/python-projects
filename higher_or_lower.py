@@ -78,23 +78,27 @@ def render_choices():
 render_choices()
 user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
 
-while not game_over:
-    if user_choice == 'a' and (a_follower_count > b_follower_count):
-        user_score += 1
-        print(f"You're right! Current score: {user_score}")
-        b_item = random.choice(data)
-        choose_b()
-        print(vs)
-        choose_b()
-        user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
-    elif user_choice == 'b' and (b_follower_count > a_follower_count):
-        user_score += 1
-        print(f"You're right! Current score: {user_score}")
-        a_item = random.choice(data)
-        choose_a()
-        print(vs)
-        choose_b()
-        user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
-    else:
-        game_over = True
-        print(f"You lost!")
+if user_choice == 'a' and (a_follower_count > b_follower_count):
+    user_score += 1
+    print(f"You're right! Current score: {user_score}")
+    b_item = random.choice(data)
+    choose_b()
+    print(vs)
+    choose_b()
+    user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
+elif user_choice == 'b' and (b_follower_count > a_follower_count):
+    user_score += 1
+    print(f"You're right! Current score: {user_score}")
+    a_item = random.choice(data)
+    choose_a()
+    print(vs)
+    choose_b()
+    user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
+# elif:
+#     game_over = True
+#     print(f"You lost!")
+else:
+    while not game_over:
+        
+
+
