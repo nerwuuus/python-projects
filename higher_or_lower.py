@@ -21,15 +21,12 @@
 #    - Repeat until the user guesses incorrectly
 #
 # 4. CURRENT ISSUES/BUGS:
-#    - a_follower_count and b_follower_count inside choose_a()/choose_b()
-#      are local, so the comparison in the main loop does not work.
 #    - Every call to choose_a() or choose_b() picks a new random person,
 #      so names may not match the follower counts being compared.
 #    - The same person can appear as both A and B, which should not happen.
 #    - Updating A and B after a correct guess is not implemented yet.
 #    - Only the first round works properly; no continuous loop for multiple rounds.
 #    - If the first guess is wrong, the game ends immediately.
-#    - Input handling is minimal: currently only using .lower() for 'A'/'B'.
 #
 # 5. SUGGESTED FIXES:
 #    - Store selected A and B globally or return them from functions.
@@ -57,8 +54,8 @@ b_item = random.choice(data)
 # picks up a follower count number
 a_follower_count = a_item['follower_count']
 b_follower_count = b_item['follower_count']
-print(a_follower_count)
-print(b_follower_count)
+print(a_follower_count) # TEST
+print(b_follower_count) # TEST
 
 def choose_a():
     # extract each property from randomly selected dictionary
